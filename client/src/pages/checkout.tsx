@@ -1268,7 +1268,7 @@ export default function Checkout() {
       <header className="border-b bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <Link to="/" data-testid="link-home">
+            <Link to="/shop" data-testid="link-home">
               <img
                 src={bouquetBarLogo}
                 alt="Bouquet Bar"
