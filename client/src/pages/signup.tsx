@@ -160,12 +160,12 @@ export default function SignUp() {
             </div>
 
             {/* Back Button */}
-            <Link href="/shop">
+            {/* <Link href="/shop">
               <Button variant="ghost" className="mb-6 text-gray-600 hover:text-gray-900" data-testid="button-back">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Home
               </Button>
-            </Link>
+            </Link> */}
 
             <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
               <CardHeader className="text-center pb-4">
