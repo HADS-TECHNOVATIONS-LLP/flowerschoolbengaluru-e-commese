@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import PopupForm from "../components/PopupForm";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
-
-// Import images for each category
+import { queryClient, apiRequest } from "@/lib/queryClient";
 import BirthdayImg from "../CategoryImages/BoxArrangements.jpg";
 import BouquetImg from "../CategoryImages/DoorFlower.jpg";
 import TulipsImg from "../CategoryImages/Teddy.jpg";
@@ -555,7 +554,7 @@ const FlowerCategory: React.FC = () => {
         ...data,
         enquiry: data.enquiry || popupSubcategory
       };
-      const res = await fetch('/api/categoryuserdata', {
+      const res = await apiRequest('/api/categoryuserdata', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
