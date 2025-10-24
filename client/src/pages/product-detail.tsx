@@ -70,7 +70,7 @@ function CustomOptionPopup({ isOpen, onClose, productName, productId }: {
 
     // Send to backend
     try {
-      await fetch('/api/admin/custom-requests', {
+      await apiRequest('/api/admin/custom-requests', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ images: JSON.stringify(imagesBase64), comment: customText, product_id: productId })
