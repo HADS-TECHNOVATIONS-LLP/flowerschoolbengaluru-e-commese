@@ -93,7 +93,6 @@ export default function ShopNav() {
         title: "Logged out successfully",
         description: "You have been signed out.",
       });
-      setLocation("/");
     },
     onError: (error: any) => {
       toast({
