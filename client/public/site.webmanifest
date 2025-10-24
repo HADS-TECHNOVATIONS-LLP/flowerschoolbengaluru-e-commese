@@ -1,0 +1,60 @@
+{
+  "name": "Bouquet Bar Bengaluru - Premium Flower Delivery in Bangalore",
+  "short_name": "Bouquet Bar BLR",
+  "description": "Premium fresh flower delivery service in Bengaluru with same day delivery across Bangalore, Karnataka for all occasions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff69b4",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["shopping", "lifestyle", "business"],
+  "icons": [
+    {
+      "src": "/attached_assets/E_Commerce_Bouquet_Bar_Logo_1757433847861.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/attached_assets/E_Commerce_Bouquet_Bar_Logo_1757433847861.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Browse Flowers",
+      "short_name": "Flowers",
+      "description": "Browse our flower collection",
+      "url": "/flowers",
+      "icons": [
+        {
+          "src": "/attached_assets/E_Commerce_Bouquet_Bar_Logo_1757433847861.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Same Day Delivery",
+      "short_name": "Delivery",
+      "description": "Order for same day delivery",
+      "url": "/same-day-delivery",
+      "icons": [
+        {
+          "src": "/attached_assets/E_Commerce_Bouquet_Bar_Logo_1757433847861.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

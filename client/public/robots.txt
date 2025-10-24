@@ -1,0 +1,41 @@
+User-agent: *
+Allow: /
+
+# Important pages for SEO
+Allow: /flowers-bengaluru
+Allow: /flower-delivery-bangalore
+Allow: /roses-bengaluru
+Allow: /lilies-bangalore
+Allow: /orchids-karnataka
+Allow: /bouquets
+Allow: /flower-arrangements
+Allow: /same-day-delivery
+Allow: /birthday-flowers
+Allow: /anniversary-flowers
+Allow: /wedding-flowers
+Allow: /koramangala-flower-delivery
+Allow: /indiranagar-flower-delivery
+Allow: /whitefield-flower-delivery
+Allow: /electronic-city-flower-delivery
+Allow: /hsr-layout-flower-delivery
+Allow: /marathahalli-flower-delivery
+Allow: /jayanagar-flower-delivery
+Allow: /malleswaram-flower-delivery
+
+# Sitemap location
+Sitemap: https://bouquetbar-bengaluru.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Block unnecessary paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /*.json$
+
+# Allow image indexing
+User-agent: Googlebot-Image
+Allow: /attached_assets/
+Allow: /src/CategoryImages/
+Allow: /src/images/
+Allow: /src/FlowerShop/
