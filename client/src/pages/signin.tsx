@@ -49,7 +49,7 @@ export default function SignIn() {
         title: "Welcome back!",
         description: "You have successfully signed in.",
       });
-      setLocation("/"); // Redirect to home
+      setLocation("/shop"); // Redirect to home
     },
     onError: (error: any) => {
       toast({
@@ -145,12 +145,12 @@ export default function SignIn() {
             </div>
 
             {/* Back Button */}
-            <Link href="/shop">
+            {/* <Link href="/shop">
               <Button variant="ghost" className="mb-6 text-gray-600 hover:text-gray-900">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Home
               </Button>
-            </Link>
+            </Link> */}
 
             <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
               <CardHeader className="text-center pb-4">
