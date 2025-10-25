@@ -42,7 +42,6 @@ export default function SignUp() {
       setFieldErrors({});
       const data = await response.json();
       login(data.user);
-      setLocation("/shop");
     },
     onError: async (error: any) => {
       let errorMsg = "Failed to create account";
