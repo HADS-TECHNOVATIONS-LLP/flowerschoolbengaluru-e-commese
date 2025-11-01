@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Link, useLocation } from 'wouter';
-import { Card } from '@/components/ui/card';
-import { Slider } from '@/components/ui/slider';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
 import ShopNav from './ShopNav';
 import Footer from '@/components/footer';
 import { ChevronDown, ChevronUp, Filter, X, Search } from 'lucide-react';
- 
+import { apiRequest } from "@/lib/queryClient";
+
 interface Product {
   id: string;
   name: string;
@@ -169,10 +166,7 @@ export default function ProductsListing() {
       if (filters.bestSeller) params.append('bestSeller', 'true');
     }
  
-    const baseUrl = import.meta.env.VITE_API_URL || "https://flowerschoolbengaluru.com";
-    const res = await fetch(`${baseUrl}/api/products?${params.toString()}`, {
-      credentials: "include",
-    });
+    const res = await apiRequest(`/api/products?${params.toString()}`);
  
     if (!res.ok) throw new Error("Failed to fetch");
  
